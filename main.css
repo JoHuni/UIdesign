@@ -129,25 +129,90 @@ nav{
     text-align: center;
 }
 
-/* 메뉴 사이 구분선 추가 */
-
-
 /* 마우스가 a태그에 올라갔을 때 */
 .navbar > li > a:hover{
     color: red;
 }
 /* -------------------여기까지 네브바--------------------------- */
-
-.main-container{
-    border: 1px solid black;
-    margin: auto;
-    margin-top: 5%;
-    width: 40%;
+main {
+    padding: 20px;
     height: 600px;
-    border-radius: 50px;
+}
+
+main > h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'mapleFonts';
+    color: #333;
+}
+
+.main-container {
+    border: 2px solid #4CAF50; 
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    max-width: 600px; 
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-container > h1 {
+    background-color: #4CAF50;
+    color: #fff; 
+    padding: 15px;
+    font-family: 'mapleFonts';
+}
+
+.main-container > p {
+    padding: 20px;
+    color: #333;
+    font-family: 'pakaFonts';
+    font-size: 20px; 
+}
+
+/* --------------------------------skills 관련 css------------------ */
+
+.main-container-skills{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    justify-content: space-around;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+.main-container-skills-row {
+    display: flex;
+    border: 1px solid black;
+    max-width: 600px; 
+    border-radius: 15px;
+    overflow: hidden;
+    width: 20%;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.main-container-skills-row > h1{
+    background-color: #243536;
+    color: #fff; 
+    padding: 15px;
+    font-family: 'mapleFonts';
+    width: 100%;
     text-align: center;
 }
 
+.main-container-skills-row > p{
+    padding: 20px;
+    color: #333;
+    font-family: 'pakaFonts';
+    font-size: 20px; 
+    text-align: center;
+}
+/* 여기까지가 메인 */
 
 
 
