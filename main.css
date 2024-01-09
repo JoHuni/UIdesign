@@ -1,8 +1,160 @@
-.profile{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     /* border: 1px solid black; */
 }
+
+@font-face {
+    font-family: 'mapleFonts';
+    src: url('fonts/MaplestoryFont_TTF/Maplestory\ Light.ttf');
+}
+
+@font-face {
+    font-family: 'pakaFonts';
+    src: url('fonts/SDChildfundkorea_OTF_TTF/SDChildfundkorea.otf');
+}
+
+body{
+    /* font-family: 'MapleStoryFont', sans-serif; */
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container{
+    height: 210px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container-left{
+    width: 20%;
+    height: 100%;
+}
+
+.header-container-left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.header-container-right{
+    height: 100%;
+}
+
+.header-container-col{
+    height: 100%;
+    margin: 10px;
+}
+
+.header-container-right img{
+    display: flex;
+    width: 50px;
+    object-fit:cover;
+}
+
+.header-address{
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.header-address:last-child{
+    text-align: left;
+}
+
+.header-address *{
+    font-family: 'mapleFonts';
+}
+
+
+/* ------------------ 여기까지 헤더------------------------------- */
+nav{
+    padding: 5 10px;
+    background-color: white;
+    position: sticky;
+    top: -1px;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #e2e2e2;
+    margin-top: 10px;
+}
+
+.navbar > li{
+    width: 20%;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar > li > a{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    font-family: 'pakaFonts';
+
+    padding: 3px 10px;
+    width: 100%;
+    text-align: center;
+}
+
+/* 메뉴 사이 구분선 추가 */
+
+
+/* 마우스가 a태그에 올라갔을 때 */
+.navbar > li > a:hover{
+    color: red;
+}
+/* -------------------여기까지 네브바--------------------------- */
+
+.main-container{
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5%;
+    width: 40%;
+    height: 600px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
