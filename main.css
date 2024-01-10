@@ -137,6 +137,7 @@ nav{
 main {
     padding: 20px;
     height: 600px;
+
 }
 
 main > h1 {
@@ -167,7 +168,7 @@ main > h1 {
 }
 
 .main-container > p {
-    padding: 20px;
+    padding: 50px;
     color: #333;
     font-family: 'pakaFonts';
     font-size: 20px; 
@@ -178,23 +179,37 @@ main > h1 {
 .main-container-skills{
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
-    justify-content: space-around;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    
+    justify-content: space-around;  
+    margin-top: 5%;
 }
 
 .main-container-skills-row {
-    display: flex;
-    border: 1px solid black;
     max-width: 600px; 
     border-radius: 15px;
     overflow: hidden;
     width: 20%;
     justify-content: center;
     flex-direction: column;
-    
+    min-width: 200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 5px solid #243536;;
 }
+
+
+
+/* .main-container {
+    border: 2px solid #4CAF50; 
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    max-width: 600px; 
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+} */
 
 .main-container-skills-row > h1{
     background-color: #243536;
@@ -212,6 +227,302 @@ main > h1 {
     font-size: 20px; 
     text-align: center;
 }
+
+.skills-container {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.skill-item {
+    margin: 10px;
+    max-width: 100px;
+    overflow: hidden;
+}
+
+.skill-item > div {
+    width: 120px;
+    max-width: 100px; 
+}
+
+.skill-item > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#bend{
+   background-color: #e8be80;
+   
+}
+
+#lang{
+    background-color: #8b62e3;
+}
+
+.back-container{
+    border: 5px solid #e8be80;
+}
+
+.lang-container{
+    border: 5px solid #8b62e3;
+}
+
+/* -----------------------------------게시판----------------------------- */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'pakaFonts';
+  }
+  table *{
+    font-size: 20px;
+    
+  }
+  section.notice {
+    padding: 80px 0;
+  }
+  
+  .page-title {
+    margin-bottom: 60px;
+  }
+  .page-title h3 {
+    font-family: 'mapleFonts';
+    font-size: 28px;
+    color: #333333;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  #board-search .search-window {
+    padding: 15px 0;
+    background-color: #f9f7f9;
+  }
+  #board-search .search-window .search-wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 564px;
+  }
+  
+  #board-search .search-window .search-wrap input {
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    padding: 7px 14px;
+    border: 1px solid #ccc;
+  }
+
+  #board-search .search-window .search-wrap .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 108px;
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  .board-table {
+    font-size: 13px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .board-table a {
+    color: #333;
+    display: inline-block;
+    line-height: 1.4;
+    word-break: break-all;
+    vertical-align: middle;
+  }
+
+  .board-table a:hover {
+    text-decoration: underline;
+  }
+
+  .board-table th {
+    text-align: center;
+  }
+  
+  .board-table .th-num {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .board-table .th-date {
+    width: 200px;
+  }
+  
+  .board-table th, .board-table td {
+    padding: 20px 0;
+  }
+  
+  .board-table tbody td {
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+  }
+  
+  .board-table tbody th {
+    padding-left: 28px;
+    padding-right: 14px;
+    border-top: 1px solid #e7e7e7;
+    text-align: left;
+  }
+  
+  .board-table tbody th p{
+    display: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0 30px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .btn-dark {
+    background: #555;
+    color: #fff;
+  } 
+.container-title{
+    margin-top: 40px;
+}
+  /*--------------------------------여기서부터 로그인--------------  */
+
+body.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.login-container{
+    font-family: 'pakaFonts';
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.login-container > h2{
+    font-size: 40px;
+    color: #8fb2f2;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px
+}
+
+.login-container label {
+    color: #555;
+}
+
+.login-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color: #8fb2f2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-container button:hover {
+    background-color: #8fb2f2;
+}
+
+/* 갤러리 */
+.card-container{
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.card-item{
+    flex-shrink: 0;
+    width: 25%;
+    min-width: 200px;
+    padding: 15px;
+}
+
+.card{
+    display: block;  /* 크기 조정 가능 */
+}
+
+.card > p{
+    font-family: 'pakaFonts';
+}
+
+.content-row{
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+}
+
+.card-thumbnail-container{
+    height: 200px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.card-thumbnail{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.4s;
+}
+
+.card-content{
+    padding-top: 10px;
+    white-space: pre-wrap;
+}
+
+.card:hover .card-thumbnail{
+    transform: scale(1.1);
+}
+
+.gallery-content > p{
+    font-family: 'mapleFonts';
+}
+
+.gallery-content > img{
+    margin-top: 30px;
+    width: 70%;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+.main-content{
+    font-family: 'pakaFonts';
+    margin-bottom: 20px;
+}
+
+.main-content > button {
+    margin-bottom: 10px;
+}
+
 /* 여기까지가 메인 */
 
 

@@ -61,30 +61,63 @@
     <!-- 네비게이션 바 끝 -->
 
     <!-- 여기서부터 메인(html총 4~5개정도 만듦) -->
-    <main>
-        <h1>나를 소개합니다</h1>
-        <div class="main-container">
-            <h1>
-                조 훈 희
-            </h1>
-            <p>
-                경기도 고양시에 거주하는 24살 조훈희입니다. <br><br>
-                현재 두원공과대학교 졸업 후에<br><br>
-                 2023년 12월 29일부로<br><br>
-                kh정보교육원 종로지원에서 웹 개발자가 되기 위해 교육을 듣고 있습니다. <br><br>
-                컴퓨터 공학과를 졸업했고 학교에 재학 중일 때<br><br>
-                게임 개발이 꿈이었습니다. <br><br>
-                Unity 엔진과 C# 언어를 바탕으로 게임을 <br><br>
-                개발하여 졸업작품 전시회를 했으며 <br><br>
-                게임 개발에 열정이 식어 꿈을 그만 두게 되었습니다. <br><br>
-                자세한 이유는 다음 프로젝트에서 조금 더 자세하게 설명하겠습니다. <br><br>
-                컴퓨터 자체를 하는 것을 좋아하며 컴퓨터를 하며 집에 가만히 있는 것도 좋아하지만<br><br>
-                밖에 나가서 노는 것도 많이 좋아하고 <br><br>
-                조심스러운 성격에 말을 많이 아끼는 편이지만 <br><br>
-                유머러스한 부분도 많다고 주변인들이 저에게 말합니다.
-            </p>
-        </div>
-    </main>
+
+    <main class="notice">
+        <div class="page-title">
+              <div class="container-title">
+                  <h3>자유게시판</h3>
+              </div>
+          </div>
+          <div id="board-search">
+              <div class="container">
+                  <div class="search-window">
+                      <form action="">
+                          <div class="search-wrap">
+                              <input id="search" type="search" name="" placeholder="검색어를 입력해주세요." value="">
+                              <button type="submit" class="btn btn-dark">검색</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+                    
+            <!-- 여기서부터 게시판 -->
+          <div id="board-list">
+              <div class="container">
+                  <table class="board-table">
+                      <thead>
+                      <tr>
+                          <th scope="col" class="th-num">번호</th>
+                          <th scope="col" class="th-title">제목</th>
+                          <th scope="col" class="th-date">등록일</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td>1</td>
+                          <th>
+                            <a href="content1.html">시험 후기</a>
+                          </th>
+                          <td>2024.01.10</td>
+                      </tr>
+      
+                      <tr>
+                          <td>2</td>
+                          <th><a href="content2.html">점심 뭐먹지</a></th>
+                          <td>2024.01.10</td>
+                      </tr>
+      
+                      <tr>
+                          <td>3</td>
+                          <th><a href="content3.html">반응속도 테스트</a></th>
+                          <td>2024.01.10</td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      <!-- 게시판 끝 -->
+      </main>
     <!-- 여기까지가 메인 -->
 </body>
 </html>
